@@ -13,12 +13,11 @@
  *= require_tree .
  *= require_self
  */
-
  #dice {
   width: 150px;
   height: 150px;
   background-color: #f0f0f0;
-  border: 2px solid #333;    /* cube-like look */
+  border: 2px solid #333;
   border-radius: 10px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
