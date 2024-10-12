@@ -5,6 +5,18 @@ eagerLoadControllersFrom("controllers", application)
 
 document.addEventListener("DOMContentLoaded", function() {
   const diceDots = document.querySelectorAll('.dot');
+  const diceElement = document.getElementById('dice');
+
+  // Event listeners for color inputs
+  document.getElementById('dice-color').addEventListener('input', function() {
+    diceElement.style.backgroundColor = this.value;
+  });
+
+  document.getElementById('dot-color').addEventListener('input', function() {
+    diceDots.forEach(dot => {
+      dot.style.backgroundColor = this.value;
+    });
+  });
 
   document.getElementById("roll-button").addEventListener("click", function() {
     rollDice();
