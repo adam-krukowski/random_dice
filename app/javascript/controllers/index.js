@@ -4,38 +4,51 @@ import { eagerLoadControllersFrom } from "@hotwired/stimulus-loading"
 eagerLoadControllersFrom("controllers", application)
 
 document.addEventListener("DOMContentLoaded", function() {
+  const diceDots = document.querySelectorAll('.dot');
+
   document.getElementById("roll-button").addEventListener("click", function() {
     rollDice();
   });
 
-  // Function to roll the dice and display dots
+  // Function to roll the dice and show the appropriate dots
   function rollDice() {
     const randomNumber = Math.floor(Math.random() * 6) + 1;
     showNumber(randomNumber);
   }
 
-  // Function to display the dots based on the number rolled
+  // Function to display dots based on the rolled number
   function showNumber(number) {
-    // Hide all dots initially
-    for (let i = 1; i <= 9; i++) {
-      document.getElementById(`dot-${i}`).style.display = "none";
-    }
+    // Remove the "show" class from all dots to hide them
+    diceDots.forEach(dot => dot.classList.remove('show'));
 
-    // Show the appropriate dots for the rolled number
+    // Based on the number rolled, show the corresponding dots
     if (number === 1) {
-      document.getElementById('dot-5').style.display = 'block';
+      diceDots[4].classList.add('show'); // Center dot
     } else if (number === 2) {
-      document.getElementById('dot-1').style.display = 'block';
-      document.getElementById('dot-9').style.display = 'block';
+      diceDots[0].classList.add('show'); // Top-left
+      diceDots[8].classList.add('show'); // Bottom-right
     } else if (number === 3) {
-      document.getElementById('dot-9').style.display = 'block';
+      diceDots[0].classList.add('show'); // Top-left
+      diceDots[4].classList.add('show'); // Center
+      diceDots[8].classList.add('show'); // Bottom-right
     } else if (number === 4) {
-      document.getElementById('dot-9').style.display = 'block';
+      diceDots[0].classList.add('show'); // Top-left
+      diceDots[2].classList.add('show'); // Top-right
+      diceDots[6].classList.add('show'); // Bottom-left
+      diceDots[8].classList.add('show'); // Bottom-right
     } else if (number === 5) {
-      document.getElementById('dot-1').style.display = 'block';
-      document.getElementById('dot-9').style.display = 'block';
+      diceDots[0].classList.add('show'); // Top-left
+      diceDots[2].classList.add('show'); // Top-right
+      diceDots[4].classList.add('show'); // Center
+      diceDots[6].classList.add('show'); // Bottom-left
+      diceDots[8].classList.add('show'); // Bottom-right
     } else if (number === 6) {
-      document.getElementById('dot-1').style.display = 'block';
+      diceDots[0].classList.add('show'); // Top-left
+      diceDots[2].classList.add('show'); // Top-right
+      diceDots[3].classList.add('show'); // Middle-left
+      diceDots[5].classList.add('show'); // Middle-right
+      diceDots[6].classList.add('show'); // Bottom-left
+      diceDots[8].classList.add('show'); // Bottom-right
     }
   }
 });
