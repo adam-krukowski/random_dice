@@ -4,8 +4,8 @@ dice interface where users can roll a dice to generate random numbers and change
 
 Features
 🎲 Roll a dice to generate random numbers (1-6).
-🎨 Change the background color of the dice.
-🔴 Change the color of the dots on the dice.
+🎨 Change the background colour of the dice.
+🔴 Change the colour of the dots on the dice.
 💡 Smooth transitions for the dots appearing and disappearing.
 
 Installation
@@ -27,11 +27,11 @@ Click the "Roll Dice" button to roll the dice.
 <img width="1131" alt="Screenshot 2024-10-14 at 22 10 38" src="https://github.com/user-attachments/assets/9a411ce3-ce77-4802-b112-8dfbecde36d3">
 
 
-Choose a background color for the dice using the color picker labeled "Choose Dice Background Color."
+Choose a background colour for the dice using the colour picker labeled "Choose Dice Background Colour."
 <img width="1131" alt="Screenshot 2024-10-14 at 22 04 30" src="https://github.com/user-attachments/assets/d2241268-6c63-454b-96d5-874d8f03d679">
 
 
-Choose a dot color for the dice using the color picker labeled "Choose Dot Color."
+Choose a dot colour for the dice using the colour picker labeled "Choose Dot Colour."
 <img width="1131" alt="Screenshot 2024-10-14 at 22 04 40" src="https://github.com/user-attachments/assets/f128d885-37db-4ceb-8fc6-670d9d23f052">
 
 
@@ -44,7 +44,7 @@ index.js: The JavaScript file containing the game logic for rolling the dice and
 Customization
 You can modify the following aspects to customize the game:
 
-Dice appearance: Update the CSS styles in style.css to change the size, color, or animation effects.
+Dice appearance: Update the CSS styles in style.css to change the size, colour, or animation effects.
 Dot positions: Adjust the dot layout in the JavaScript file if you want to customize the pattern for each dice roll.
 License
 This project is open-source and available under the MIT License.
