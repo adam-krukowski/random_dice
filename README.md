@@ -54,6 +54,7 @@ Customization
 You can modify the following aspects to customize the game:
 
 ⚪️ Dice appearance: Update the CSS styles in style.css to change the size, colour, or animation effects.
+
 ⚪️ Dot positions: Adjust the dot layout in the JavaScript file if you want to customize the pattern for each dice roll.
 
 License
