@@ -1,4 +1,4 @@
-Roll the Dice Game 🎲
+🎲 Roll the Dice Game 
 
 It is a simple "Roll the Dice" game implemented using HTML, CSS, and JavaScript. It features a customizable 
 dice interface where users can roll a dice to generate random numbers and change the dice's background colour and dot colour.
