@@ -11,6 +11,8 @@ Features
 
 🔴 Change the colour of the dots on the dice.
 
+💾 Persistent Colour Settings: The background and dot colours are saved and remain the same even after refreshing the page.
+
 💡 Smooth transitions for the dots appearing and disappearing.
 
 
