@@ -61,4 +61,4 @@ You can modify the following aspects to customize the game:
 
 License
 
-This project is open-source and available under the MIT License.
+This project is open-source and available under the MIT License. 
